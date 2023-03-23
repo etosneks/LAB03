@@ -1,11 +1,11 @@
 
-cd your-project
-git clone https://github.com/tp-labs/lab03.git
+cd project
+git clone https://github.com/tp-labs/LAB03.git
 cd
-cd your-project/lab03
-git config user.name "ne-kit-28"
-git config user.email "nickit.nic098@yandex.ru"
-git remote set-url origin https://ne-ki-28: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@github.com/ne-kit-28/lab03.git
+cd project/LAB03
+git config user.name "etosneks"
+git config user.email "dariakula@bk.ru"
+git remote set-url origin https://etosneks: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@github.com/etosneks/LAB03.git
 mkdir formatter_lib
 cd formatter_lib
 cat > CMakeList.txt
@@ -23,7 +23,7 @@ cmake --build _build
 
 2 задание 
 cd
-cd your-project/lab03/formatter_ex_lib
+cd project/LAB03/formatter_ex_lib
 cat > CMakeLists.txt
 
 cmake_minimum_required(VERSION 3.20)
@@ -48,7 +48,6 @@ add_subdirectory(../formatter_ex_lib formatter_ex)
 target_link_libraries(hello_world formatter_ex)
 
 cmake -H. -B_build
-cmake --build _build
 cmake --build _build --target hello_world
 ./_build/hello_world
 
@@ -74,7 +73,6 @@ add_library(solver_lib STATIC solver.cpp)
 cd ../solver_application
 
 cmake -H. -B_build
-cmake --build _build
 cmake --build _build --target solver
 ./_build/solver
 
