@@ -1,6 +1,6 @@
 
 cd project
-git clone https://github.com/tp-labs/LAB03.git
+git clone https://github.com/tp-labs/lab03.git
 cd
 cd project/LAB03
 git config user.name "etosneks"
